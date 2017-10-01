@@ -171,7 +171,7 @@ b {
         color: #ff8f00;
         position: absolute;
         z-index: 6;
-        bottom: 10%; }
+    	}
       .header__category-item::before {
         content: '';
         position: absolute;
@@ -513,7 +513,7 @@ footer {
     right: 0;
     text-align: center;
     width: 90%;
-    bottom: 0; }
+    bottom: 10%; }
   .header .header__category-item {
     width: 100%; }
   .header__image-article {
