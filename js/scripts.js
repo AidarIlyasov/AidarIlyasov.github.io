@@ -1,6 +1,5 @@
 (function($) {
     "use strict";
-
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 60
@@ -32,4 +31,12 @@
     });
 
     $('.parallax-window').parallax({imageSrc: './assets/reflection-nebula-750x763.jpg'});
+
+    $('.gallery-box').click(function(){
+        var altImg = $(this).find('.img-responsive').attr("alt");
+        var altImg = parseInt(altImg.replace(/\D+/g,""));
+
+        var lorem = $("#work-num").attr("href", "./works/progect-" + altImg + "/index.html");
+    });
+    
 })(jQuery);
