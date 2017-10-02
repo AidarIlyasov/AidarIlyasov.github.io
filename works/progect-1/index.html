@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Fonts -->
+</head>
+<body>
+	<header class="header">
+		<div class="container-btn">
+			<div class="container">
+				<div class="header-inner">
+					<div class="header_top">
+						<div class="logo">
+							<a href="javascript:void(0)">Golden</a>
+						</div>
+						<nav class="menu-m b_nav-w">
+							<ul class="b-nav__list">
+								<li class="b-nav__item">
+									<a href="javascript:void(0)" class="b-nav__down-link">Home</a>
+								</li>
+								<li class="b-nav__item">
+									<a href="javascript:void(0)" class="b-nav__down-link">Service</a>
+								</li>
+								<li class="b-nav__item">
+									<a href="javascript:void(0)" class="b-nav__down-link">Portfolio</a>
+								</li>
+								<li class="b-nav__item">
+									<a href="javascript:void(0)" class="b-nav__down-link">About</a>
+								</li>
+								<li class="b-nav__item">
+									<a href="javascript:void(0)" class="b-nav__down-link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="menu-m__toggle" onclick="clickBtn()">
+							<span class="icon"></span>
+						</button>
+					</div>
+				</div>	
+				<div class="header__middle">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="header__middle-content swiper-slide">
+									<h2 class="title-2">Welcome To Our Studio!</h2>
+									<h1 class="title-1">It’s nice to Meet you</h1>
+									<input type="submit" class="btn" value="Tell me more">
+								</div>
+								<div class="swiper-slide secont-div container">	
+									<h4 style="color: white; font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt earum, quaerat odio at asperiores dignissimos! Amet voluptatum perferendis nobis odio officia mollitia consequuntur eius, in iure culpa nostrum temporibus!</h4>
+								</div>	
+							</div>
+					        <div class="swiper-pagination"></div>
+						</div>	
+				</div>
+			</div>
+			<!-- Add Arrows -->
+	       <div class="slider-button-next">
+		    <svg width="30px" height="50px" viewBox="0 0 50 80" xml:space="preserve">
+		    	<polyline fill="none" stroke="javascript:void(0)FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+				0.375,0.375 45.63,38.087 0.375,75.8 "/>
+		    </svg>
+	       </div>
+			<div class="slider-button-prev">
+				<svg width="30px" height="50px" viewBox="0 0 50 80" xml:space="preserve">
+					<polyline fill="none" stroke="javascript:void(0)FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+				45.63,75.8 0.375,38.087 45.63,0.375 "/>
+				</svg> 
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="b-section b-section--services">
+			<div class="container article">
+				<h3 class="title-3">services</h3>
+				<span>
+					Proin iaculis purus consequat sem cure. 
+				</span>
+				<div class="b-services">
+					<div class="services__item">
+						<div class="b-services__img">
+							<img src="images/Icon-Basket.png" alt="">
+						</div>
+						<strong class="b-services__title">
+							E-Commerce
+						</strong>
+						<p class="b-services__info">
+							Proin iaculis purus consequat sem cure 
+							digni ssim. Donec porttitora entum suscipit 
+							aenean rhoncus posuere odio in tincidunt.
+						</p>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<section class="b-section b-section--portfolio">
+			<div class="container article">
+				<h3 class="title-3">our portfolio</h3>
+				<span>Proin iaculis purus consequat sem cure.</span>
+				<div class="b-portfolio">
+					<div class="portfolio__item">
+						<div class="b-portfolio__img">
+							<a href="javascript:void(0)"><img src="images/portfolio-4.jpg" alt=""></a>
+						</div>
+						<div class="b-portfolio__title">
+							<a href="javascript:void(0)">Vinyl Record</a>
+						</div>
+						<p class="b-portfolio__info">Product Mock-Up</p>
+					</div><br>
+					<div class="portfolio__item">
+						<div class="b-portfolio__img">
+							<a href="javascript:void(0)"><img src="images/portfolio-5.jpg" alt=""></a>
+						</div>
+						<div class="b-portfolio__title">
+							<a href="javascript:void(0)">Treehouse Template</a>
+						</div>
+						<p class="b-portfolio__info">Web Design</p>
+					</div><br>
+					<div class="portfolio__item">
+						<div class="b-portfolio__img">
+							<a href="javascript:void(0)"><img src="images/portfolio-6.jpg" alt=""></a>
+						</div>
+						<div class="b-portfolio__title">
+							<a href="javascript:void(0)">Burned Logo</a>
+						</div>
+						<p class="b-portfolio__info">Branding</p>
+					</div>
+					<div class="portfolio__item hidden">
+						<div class="b-portfolio__img">
+							<a href="javascript:void(0)"><img src="images/portfolio-4.jpg" alt=""></a>
+						</div>
+						<div class="b-portfolio__title">
+							<a href="javascript:void(0)">Vinyl Record</a>
+						</div>
+						<p class="b-portfolio__info">Product Mock-Up</p>
+					</div>
+					<div class="portfolio__item hidden">
+						<div class="b-portfolio__img">
+							<a href="javascript:void(0)"><img src="images/portfolio-5.jpg" alt=""></a>
+						</div>
+						<div class="b-portfolio__title">
+							<a href="javascript:void(0)">Treehouse Template</a>
+						</div>
+						<p class="b-portfolio__info">Web Design</p>
+					</div>
+					<div class="portfolio__item hidden">
+						<div class="b-portfolio__img">
+							<a href="javascript:void(0)"><img src="images/portfolio-6.jpg" alt=""></a>
+						</div>
+						<div class="b-portfolio__title">
+							<a href="javascript:void(0)">Burned Logo</a>
+						</div>
+						<p class="b-portfolio__info">Branding</p>
+					</div>
+					<div class="button-wrapper">
+						<input type="submit" class="btn show-more" value="Show more">
+					</div>	
+				</div>
+			</div>
+		</section>
+		<section class="b-section b-section--about">
+				<div class="container article">
+					<h3 class="title-3">about us</h3>
+					<span>Proin iaculis purus consequat sem cure.</span>
+					<div class="b-about">
+						<div class="about__item">
+							<div class="b-about__info">
+								<div class="b-about__date">July 2010</div>	
+								<div class="b-about__title">Our Humble Beginnings</div>
+								<p>
+									Proin iaculis purus consequat sem cure 
+									digni ssim. Donec porttitora entum suscipit 
+									aenean rhoncus posuere odio in tincidunt. Proin 
+									iaculis purus consequat sem cure digni 
+									ssim. Donec porttitora entum suscipit.
+								</p>
+							</div>
+							<div class="b-about__img">
+								<img src="images/about-1.jpg" alt="">
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="b-about__info">
+								<div class="b-about__date">July 2010</div>	
+								<div class="b-about__title">Our Humble Beginnings</div>
+								<p>
+									Proin iaculis purus consequat sem cure 
+									digni ssim. Donec porttitora entum suscipit 
+									aenean rhoncus posuere odio in tincidunt. Proin 
+									iaculis purus consequat sem cure digni 
+									ssim. Donec porttitora entum suscipit.
+								</p>
+							</div>
+							<div class="b-about__img">
+								<img src="images/about-1.jpg" alt="">
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="b-about__info">
+								<div class="b-about__date">July 2010</div>	
+								<div class="b-about__title">Our Humble Beginnings</div>
+								<p>
+									Proin iaculis purus consequat sem cure 
+									digni ssim. Donec porttitora entum suscipit 
+									aenean rhoncus posuere odio in tincidunt. Proin 
+									iaculis purus consequat sem cure digni 
+									ssim. Donec porttitora entum suscipit.
+								</p>
+							</div>
+							<div class="b-about__img">
+								<img src="images/about-1.jpg" alt="">
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="b-about__info">
+								<div class="b-about__date">July 2010</div>	
+								<div class="b-about__title">Our Humble Beginnings</div>
+								<p>
+									Proin iaculis purus consequat sem cure 
+									digni ssim. Donec porttitora entum suscipit 
+									aenean rhoncus posuere odio in tincidunt. Proin 
+									iaculis purus consequat sem cure digni 
+									ssim. Donec porttitora entum suscipit.
+								</p>
+							</div>
+							<div class="b-about__img">
+								<img src="images/about-1.jpg" alt="">
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="b-about__img b-about__img-last">
+								<div class="b-about__title" >Our <br> Story <br> Continues <br>...</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+		</section>
+		<section class="b-section b-section--team">
+				<div class="container article">
+					<h3 class="title-3">our amazing team</h3>
+					<span>Proin iaculis purus consequat sem cure.</span>
+					<div class="b-team">
+						<div class="team__item">
+							<div class="b-team__img">
+								<img src="images/team-1.jpg" alt="">
+							</div>
+							<div class="team__item-name">
+								Rico Massimo
+							</div>
+							<div class="team__item-position">Coder</div>
+							<div class="team__item-contacts">
+								<a href="javascript:void(0)"><div class="team__item-contacts__twitter"></div></a>
+								<a href="javascript:void(0)"><div class="team__item-contacts__facebook"></div></a>
+								<a href="javascript:void(0)"><div class="team__item-contacts__google"></div></a>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="b-team__img">
+								<img src="images/team-2.jpg" alt="">
+							</div>
+							<div class="team__item-name">
+								Kimberly Thompson
+							</div>
+							<div class="team__item-position">Marketer</div>
+							<div class="team__item-contacts">
+								<a href="javascript:void(0)"><div class="team__item-contacts__twitter"></div></a>
+								<a href="javascript:void(0)"><div class="team__item-contacts__facebook"></div></a>
+								<a href="javascript:void(0)"><div class="team__item-contacts__google"></div></a>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="b-team__img">
+								<img src="images/team-3.jpg" alt="">
+							</div>
+							<div class="team__item-name">
+								Uku Mason
+							</div>
+							<div class="team__item-position">Graphic Designer</div>
+							<div class="team__item-contacts">
+								<a href="javascript:void(0)"><div class="team__item-contacts__twitter"></div></a>
+								<a href="javascript:void(0)"><div class="team__item-contacts__facebook"></div></a>
+							</div>
+						</div>
+					</div>
+						<div class="b-team__info">
+							Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit  
+							aenean rhoncus posuere odio in tincidunt proin iaculis.
+						</div>
+					<div class="b-partners">
+						<div class="partners__item">
+							<a href="javascript:void(0)">
+								<div class="partners__item-envato"></div>
+							</a>
+							<a href="javascript:void(0)">
+								<div class="partners__item-wordpress"></div>
+							</a>
+							<a href="javascript:void(0)">
+								<div class="partners__item-tuts"></div>
+							</a>
+							<a href="javascript:void(0)">
+								<div class="partners__item-microlancer"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+		</section>
+	</main>	
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container article">
+				<h3 class="title-3">Contact us</h3>
+				<span>Proin iaculis purus consequat sem cure.</span>
+				<div class="footer-item">
+					<form action="" class="footer-item__form">
+						<div class="footer-item__inputs">
+							<input type="text" required  placeholder="Your name *">
+							<input type="email" required  placeholder="Your E-Mail *">
+							<input type="text" placeholder="SubJect">
+						</div>	
+						<textarea name="text" id="" required  class="footer-item__textarea" cols="30" rows="10" placeholder="Your message *"></textarea>
+						<div class="button-wrapper"><input type="submit" required value="Send message" class="btn footer-item__btn"></div>
+					</form>
+				</div>
+			</div>	
+		</div>
+		<div class="footer__bottom">
+			<div class="container footer__bottom-inner">
+				<div class="b-copyrigh">
+					<div class="b-copyright__item">
+						© Copyright 2014 FreebiesXpress.com
+					</div>
+				</div>
+				<div class="b-soc">
+					<a href="javascript:void(0)" class="b-soc__list"><div class="b-soc__item__twitter"></div></a>
+					<a href="javascript:void(0)" class="b-soc__list"><div class="b-soc__item__facebook"></div></a>
+					<a href="javascript:void(0)" class="b-soc__list"><div class="b-soc__item__pinterest"></div></a>
+					<a href="javascript:void(0)" class="b-soc__list"><div class="b-soc__item__google"></div></a>
+				</div>
+			</div>	
+		</div>
+	</footer>
+</body>
+
+
+
+<script src="js/comoon.js"></script>
+<script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.slider-button-next',
+        prevButton: '.slider-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: false,
+        autoplayDisableOnInteraction: true
+    });
+    </script>
+</html>

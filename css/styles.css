@@ -451,6 +451,7 @@ textarea {
     color: #222;
     background-color: #f2f2f2;
     opacity: 0.7;
+    outline: none;
 }
 
 .btn-default:active,
@@ -537,4 +538,24 @@ img::-moz-selection {
 }
 .container-w{
     max-width: 1950px;
+}
+.btns-block{
+  height: 50px;
+  padding-top: 10px;
+}
+.btns{
+  margin: 0 auto;
+  width: 200px;
+}
+.btns > button{
+	float: right;
+}
+.btns > a{
+	text-decoration: none;
+}
+.btns button:first-child{
+	margin-left: 10px;
+}
+.btn .btn-primary .btn-lg .center-block{
+	outline: none;
 }
