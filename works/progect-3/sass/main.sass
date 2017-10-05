@@ -1,0 +1,298 @@
+
+@import "__settings"
+
+body,html
+	margin: 0
+	padding: 0
+	height: 100%
+	min-height: 100%
+	font-size: 14px
+	color: $primary_color
+	font-family: "PT_Sans", Arial
+span
+	color: $select_color	
+a
+	font-size: 12px
+h1,p
+	margin: 0
+	padding: 0
+header
+	width: 100%
+i
+	font-family: "Whhg-font"
+=logotype_text()
+	text-transform: uppercase
+	h1
+		font-size: 36px
+		text-transform: uppercase
+	.logotype_half
+		color: $select_color
+.wr	
+	margin: 0 auto
+.shadow	
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.4)
+	margin-bottom: 2px
+.top_line
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: center
+	align-content: stretch
+	flex-wrap: wrap
+	min-height: 100px
+	.logotype
+		a
+			text-decoration: none
+			font-size: 12px
+			color: $primary_color
+			+logotype_text
+			span
+				color: $primary_color
+i.icon-emailalt
+	color: $select_color
+	margin-right: 5px				
+.phone_work
+	display: flex
+	align-items: center
+	justify-content: space-between
+	.phone_number
+		text-align: right
+		p
+			text-transform: uppercase
+			font-size: 12px
+		span
+			font-size: 30px
+		a
+			color: $primary_color	
+	.work_time
+		margin-left: 20px
+		li
+			background-image: url(../../img/cr.png)
+			background-repeat: no-repeat
+			background-position: 0% 0%
+			height: 6px
+			list-style: none
+			text-align: right
+			margin-top: 4px
+			font-size: 10px
+			width: 70px	
+.background_image
+	background: url(../../img/o-HAPPY-PEOPLE-facebook.jpg) no-repeat center / cover
+	position: relative
+	height: 600px
+#slider
+	.slide
+		color: #fff
+		h1
+			background: $select_color
+			font-size: 33px
+			font-weight: 100
+			width: 366px
+			padding: 0 30px
+			height: 70px
+			line-height: 2
+			margin: 10px 0 0
+			text-transform: uppercase	
+		p
+			background: $primary_color
+			height: 130px
+			overflow: hidden
+			padding: 0 30px
+			display: flex
+			align-items: center
+			line-height: 2
+			margin-top: 10px
+// advantages			
+.advantages
+	min-height: 260px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	justify-content: space-around
+.item
+	h3
+		width: 150px
+		text-transform: uppercase
+		text-align: center
+		min-height: 50px
+.item_image
+	background: $select_color
+	height: 80px
+	width: 80px
+	border-radius: 40px
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: center
+	i
+		font-size: 36px
+		color: #fff
+// info	
+.info
+	display: flex
+	flex-wrap: wrap
+	flex-basis: 220px
+	flex-grow: 1
+	justify-content: space-between
+	text-align: justify
+	&_image
+		height: 137px
+		background: #999
+		img
+			max-width: 100%
+			min-height: 100%
+	&_article
+		text-align: center
+		+logotype_text
+		margin: 0px 0px 15px
+	&_block
+		width: 224px
+		margin: 15px auto
+		.info_title
+			text-transform: uppercase
+			font-weight: 700
+			margin: 20px 0px
+			color: $select_color
+// call-back
+.call
+	&_back
+		min-height: 280px
+		background: $select_color
+		margin-top: 60px
+		display: flex
+		align-items: center
+	&_title
+		+logotype_text
+		color: #fff
+	&_desc
+		display: flex
+		align-items: baseline
+		flex-wrap: wrap
+		justify-content: space-between
+		margin: 20px 0px
+		p
+			text-align: left
+			color: #fff
+			line-height: 1.9
+	&_form
+		display: flex
+		flex-wrap: wrap
+		width: 460px
+		input
+			width: 220px
+			height: 40px
+			margin-top: 5px
+			padding-left: 15px
+			box-sizing: border-box
+			outline: none
+	&_input
+		text-transform: uppercase
+		color: #fff
+	&_btn
+		display: flex
+		justify-content: flex-end
+		width: 100%
+		background: transparent
+		margin-top: 15px
+		cursor: pointer
+		input
+			outline: none
+			border: solid 2px #fff
+			text-transform: uppercase
+			font-size: 14px
+			color: #fff
+			justify-content: center
+// news
+.news
+	margin: 30px 20px
+.entry			
+	display: flex
+	justify-content: space-between
+	margin: 20px 0px
+	flex-wrap: wrap
+	&_image
+		border: solid 1px 
+		img
+			max-width: 100%
+			max-height: 100%
+			border: dashed 1px $select_color
+	&_text
+		width: 74%
+		.entry_title
+			font-size: 30px
+		p
+			line-height: 2
+// adress
+.adress
+	margin: 0px 20px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&_title
+		+logotype_text
+		margin-bottom: 20px
+	&_text
+		width: 450px
+		text-align: justify
+		line-height: 1.5
+	&_map
+		display: flex
+		flex-wrap: wrap
+		width: 450px
+		justify-content: space-between
+		margin: 0 auto
+		.map
+			margin: 30px auto
+		.image
+			width: 160px
+			height: 100px
+			border: dashed 1px $select_color
+			img
+				max-height: 100%
+				max-width: 100%
+.gllery
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+	margin-top: 40px
+	justify-content: space-between
+	&_image
+		height: 100px
+		width: 140px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		border: solid #999
+		img 
+			max-width: 100%
+			max-height: 100%
+footer
+	margin-top: 60px
+	background: $select_color
+	.footer	
+		color: #fff
+		display: flex
+		height: 230px
+		justify-content: flex-end
+		align-items: center
+		a,span,i
+			color: #fff
+		&_container
+			h1
+				text-transform: uppercase
+				font-size: 36px
+			span
+				text-transform: uppercase
+		.phone_number
+			margin-top: 20px		
+			span:nth-child(2)
+				font-size: 30px
+@import "__media"

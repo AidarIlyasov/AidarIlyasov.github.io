@@ -1,0 +1,202 @@
+// Small devices (landscape phones, 660px and up)
+@media (max-width: 660px)
+	=article-title()
+		font-size: 30px
+		padding: 0px 15px
+	.wr
+		width: 100%
+		text-align: center
+	p
+		text-align: justify
+	.top_line
+		justify-content: center
+		.logotype
+			padding: 50px 0px 20px
+			width: 100%
+			a
+				&__header
+					margin-bottom: 5px
+					display: block
+				h1
+					+article-title()
+	.work_time,.phone_number a,.phone_number i
+		display: none
+	.background_image
+		height: 400px
+	.sli-links
+		margin-top: -60px
+	#slider
+		height: 400px
+		.slide
+			h1
+				font-size: 23px
+				width: 100%
+				height: 50px
+				padding: 0	
+	.phone_work	
+		.phone_number
+			span
+				display: block
+				font-size: 16px
+				margin: 5px 0px					
+	.item
+		width: 100%
+		h3
+			width: 70%
+			margin: 20px auto
+			height: 0
+		&:first-child
+			margin-top: 50px
+	.info
+		&_article
+			h1
+				+article-title()
+		&_block
+			// width: 320px
+			padding: 15px			
+	.call
+		&_back
+			text-align: center
+		&_btn
+			justify-content: center	
+		&_desc
+			margin: 20px
+		&_input
+			margin-top: 20px
+			width: 100%
+			input
+				width: 100%	
+		&_form
+			margin: 0 auto
+			width: 100%
+		&_title
+			margin-top: 45px
+			h1
+				+article-title()
+	.entry
+		&_text
+			width: 100%
+			.entry_title
+				margin: 15px 0px
+		&_image
+			text-align: center
+			width: 100%	
+	.adress
+		&_title,&_text
+			width: 100%	
+			text-align: center
+		&_title
+			h1
+				+article-title()		
+	.gllery
+		&_image
+			margin-top: 20px
+	footer		
+		.footer
+			justify-content: center
+			text-align: center
+			&_container
+				h1
+					+article-title()
+				span
+					display: block
+					margin-top: 10px
+			.phone_number
+				margin-top: 10px
+				span
+					display: block
+					margin-top: 10px
+					&:nth-child(2)
+						font-size: 20px		
+	#slider
+		width: 100%
+// Medium devices (tablets, 660px and up)
+@media (min-width: 660px) and (max-width: 1024px)
+	.wr
+		width: 100%	
+	.advantages
+		justify-content: flex-start
+	.item
+		margin: 50px 0px auto 0px
+	.call
+		&_back
+			text-align: center
+		&_desc
+			p
+				margin: 20px
+		p
+			width: 100%	
+		&_form
+			margin: 0 auto
+		&_input
+			&:nth-child(2n)
+				margin-left: 20px
+		&_btn
+			justify-content: center		
+		&_title
+			h1
+				margin-top: 45px
+				text-align: center
+	.entry
+		&_text
+			width: 100%
+			text-align: center	
+			.entry_title
+    			margin: 15px 0px								
+		&_image
+			width: 100%
+			text-align: center
+	.adress
+		&_title,&_text
+			width: 100%
+			text-align: center
+		&_map
+			width: 100%;
+			flex-direction: row-reverse;
+			justify-content: space-around;
+			margin: 30px 0px;
+			.map
+				margin: 0	
+	.gllery
+		&_image
+			margin-top: 20px
+	.footer
+		justify-content: center
+		text-align: center	
+	.info
+		justify-content: space-between
+		&_block
+			&:last-child
+				margin: 15px auto 15px 3%
+
+
+// Large devices (desktops, 1024px and up)
+// @media (min-width: 1024px)
+// 	.wr
+// 		width: 100%
+// 	.call_back
+// 		padding: 20px	
+// 	.call_desc
+// 		p
+// 			width: 460px
+// 	.call_input
+// 		&:nth-child(2n)
+// 			margin-left: 20px
+// 	.entry
+// 		&_image
+// 			width: 220px
+// 			height: 136px		
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1024px)
+	.wr
+		width: 960px
+	.call_desc
+		p
+			width: 460px
+	.call_input
+		&:nth-child(2n)
+			margin-left: 20px
+	.entry
+		&_image
+			width: 220px
+			height: 136px		
