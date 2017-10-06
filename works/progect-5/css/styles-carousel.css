@@ -1,0 +1,37 @@
+.carousel  {
+   max-width: 1080px; 
+   width:100%;
+   margin: 0 auto;
+   padding-top: 70px;
+}
+.carousel-wrapper {
+   margin: 0px 30px;
+   overflow: hidden; 
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; 
+   position: relative; 
+}
+.carousel-block {
+   float: left; 
+   width: 1020px; 
+   padding: 10px 70px;
+
+}
+.carousel-button-left a, .carousel-button-right a{
+   width: 25px; 
+   height: 36px; 
+   position: relative;
+   top: 80px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-left a{
+   float: left; 
+   background: url(../images/carousel-left.png) no-repeat; 
+}
+.carousel-button-right a{
+   float: right;
+   background: url(../images/carousel-right.png) no-repeat; 
+}

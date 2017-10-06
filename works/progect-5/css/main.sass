@@ -1,0 +1,688 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+	display: block
+body 
+	line-height: 1
+ol, ul
+	list-style: none
+blockquote, q
+	quotes: none
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+*
+	box-sizing: border-box  
+	-moz-box-sizing: border-box  
+	-webkit-box-sizing: border-box  
+
+$font-stack: 'Montserrat', sans-serif
+$primary-text-color: #333
+$banner-text-color: #fff
+
+=title-style()
+	font-size: 24px
+	font-family: 'Kaushan Script', cursive
+	text-align: center	
+
+=article-style()
+	font-family: 'Montserrat', sans-serif
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 30px
+	line-height: 3
+	text-align: center
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius:    $radius
+	-ms-border-radius:     $radius
+	border-radius:         $radius
+
+=item-style()
+	[class^="item-"]
+		box-sizing: border-box
+		float: left
+		position: relative
+		.info-card
+			// display: 
+			position: absolute
+			text-align: center
+			left: 0
+			top: 0
+			bottom: 0
+			right: 0
+			height: 50px
+			margin: auto
+			text-transform: uppercase
+			color: $banner-text-color
+			font-weight: 700
+			z-index: 5
+			text-decoration: none
+			display: none
+			img
+				padding-bottom: 10px
+		img
+			max-width: 100%
+			max-height: 100%
+		&:hover::before
+			display: block
+			cursor: pointer
+		&:hover .info-card
+			display: block	
+		&::before
+			z-index: 2
+			content: ''
+			display: none
+			position: absolute
+			width: 100%
+			height: 100%
+			/* IE10+ */ 
+			background-image: -ms-linear-gradient(bottom, #FCE38A 0%, rgba(244, 140, 130, 0.9)  90%)
+
+			/* Mozilla Firefox */ 
+			background-image: -moz-linear-gradient(bottom, #FCE38A 0%, rgba(244, 140, 130, 0.9)  90%)
+
+			/* Opera */ 
+			background-image: -o-linear-gradient(bottom, #FCE38A 0%, rgba(244, 140, 130, 0.9)  90%)
+
+			/* Webkit (Safari/Chrome 10) */ 
+			background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FCE38A), color-stop(90, #f48c82))
+
+			/* Webkit (Chrome 11+) */ 
+			background-image: -webkit-linear-gradient(bottom, #FCE38A 0%, rgba(244, 140, 130, 0.9)  90%)
+			/* W3C Markup */ 
+			background-image: linear-gradient(to top, #FCE38A 0%, rgba(244, 140, 130, 0.9)  90%)
+	[class^="item-"]:not(:first-child)	
+		margin-left: 25px	
+
+body
+	font-family: $font-stack
+	color: $primary-text-color
+	// width: 1920px
+	background-color: $banner-text-color
+// __media queris
+
+@media (min-width: 992px) and (max-width: 1200px)
+	.facet_sidebar
+		display: none
+@media (min-width: 1200px)
+	hr.article-hr
+		margin: 70px auto 50px
+.wrapper
+	// height: 1000px
+	width: 100%
+.clear
+	clear: both	
+.container
+	width: 1200px
+	margin: 0 auto
+.active
+	display: block
+.derg
+	transform: rotate(180deg)	
+.banner
+	color: $banner-text-color
+	height: 1000px
+	width: 100%
+	background-size: contain
+	position: relative
+	/* IE10+ */ 
+	background-image: -ms-linear-gradient(bottom, #FCE38A 0%, #f48c82 100%)
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, #FCE38A 0%, #f48c82 100%)
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, #FCE38A 0%, #f48c82 100%)
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FCE38A), color-stop(100, #f48c82))
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #FCE38A 0%, #f48c82 100%)
+
+	/* W3C Markup */ 
+	background-image: linear-gradient(to top, #FCE38A 0%, #f48c82 100%)
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		opacity: 0.1
+		background: url(../images/top-bg.jpg) no-repeat center
+.top_line-navigation
+	a.logo
+		text-decoration: none
+		h2.logo_title
+			font-weight: bold
+			color: $banner-text-color
+			font-size: 30px
+			margin-top: 30px
+			display: inline-block
+	ul
+		display: table
+		height: 80px
+		float: right
+		li:not(:first-child)
+			padding-left: 50px
+		li
+			display: table-cell
+			vertical-align: middle
+			a
+				text-decoration: none
+				text-transform: uppercase
+				font-weight: normal
+				font-size: 14px
+				color: $banner-text-color
+				padding-bottom: 8px
+				&:hover
+					border-bottom: 2px solid #fce38a
+					color: #fce38a		
+				i
+					font-size: 18px
+		li.shopping-cart,li.search-icon
+
+			a
+				border-bottom: 2px solid transparent
+		li.search-icon
+			padding-left: 40px
+.popup-search
+	width: 100%
+	height: 100%
+	position: fixed
+	z-index: 15
+	display: none
+	background: #333
+	top: 0
+	left: 0	
+.search-input
+	background: transparent
+	border: none
+	border-bottom: solid 1px #fff
+	height: 80px
+	color: #fff
+	width: 80%
+	top: 50%
+	margin: 0 auto
+	margin-top: -40px
+	position: absolute
+	right: 0
+	left: 0
+	padding-right: 10px
+	font-size: 28px
+	outline: none
+	&::placeholder
+		color: #fff
+.close
+	position: absolute
+	top: 30px
+	right: 50px
+	cursor: pointer
+	& > i
+		font-size: 42px
+.article
+	text-align: center
+.article-text
+	font-family: 'Kaushan Script', cursive
+	font-size: 72px
+	padding: 170px 0px 40px
+.article-text-bold
+	font-size: 150px
+	font-weight: bold
+	text-transform: uppercase
+hr.article-hr
+	width: 80px
+	border: 3px solid $banner-text-color
+button.learn-more
+	width: 160px
+	height: 40px
+	border: solid 3px $banner-text-color
+	background: transparent
+	cursor: pointer
+	font-size: 14px
+	color: $banner-text-color
+	font-weight: bold
+	text-transform: uppercase
+	outline: none
+	&:hover
+		background-color: rgba(243, 129, 129, 0.44)
+.slider-buttons
+	width: 100%
+	.time-line
+		width: 280px
+		border: solid 3px $banner-text-color
+// about
+.about
+	text-align: center
+	&_title
+		+title-style()
+		margin: 90px 0px 25px
+	&_article
+		+article-style()
+[class$="-paragraph"]
+	width: 960px
+	margin: 0 auto
+	font-family: 'Roboto', sans-serif
+	font-size: 15px
+	color: #999
+	margin: 50px auto 100px
+	text-align: center
+hr.about-line
+	width: 60px
+	border: solid #f38181 2px
+	margin: 0 auto
+.items
+	+item-style()
+	[class^="item-"]
+		width: 380px
+		height: 252px
+.result
+	height: 270px
+	background: #95e1d3
+	margin: 111px 0px
+.result-block
+	box-sizing: border-box
+	border-left: solid #b5eae0 1px			
+	text-align: center
+	display: inline-block
+	width: 234px
+	height: 270px
+	color: #fff
+	position: relative
+.result-block:last-child
+	border-right: solid #b5eae0 1px		
+.one,.two,.three,.four,.five,.six
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	margin: auto
+	height: 115px
+	position: absolute
+	h1
+		font-size: 72px
+		font-weight: 800
+		margin-bottom: 20px
+	span
+		text-transform: uppercase
+//
+.service
+	&-title_main
+		+title-style()
+	&-article_main
+		+article-style
+	&-block
+		height: 185px
+		width: 33.33333333%
+		float: left
+		display: table
+	&-image
+		width: 100px
+		float: left
+		text-align: center
+		img
+			max-width: 100%
+	&-article
+		width: 299px
+		display: table-cell
+		vertical-align: middle	
+	&-title
+		font-family: 'Montserrat',sans-serif
+		font-size: 14px
+		text-transform: uppercase
+		display: block
+		margin-bottom: 20px
+	&-desc
+		font-family: 'Roboto',sans-serif
+		font-size: 15px
+		color: #999
+		width: 295px
+		float: right
+		line-height: 1.7
+		min-height: 45px
+// devices
+.devices
+	background: url("../images/bg_image.jpg") no-repeat center
+	background-size: cover
+	height: 852px
+	margin-top: 100px
+	text-align: center
+	img
+		max-width: 100%
+		max-height: 100%
+	&-title_main
+		padding-top: 100px
+		+title-style()
+	&-article_main
+		+article-style
+	&-image
+		display: inline-block
+		height:	580px
+		margin: 55px auto 0px	
+		overflow: hidden	
+		&_table
+			width: 476px
+	&-image_smartphone
+		position: absolute
+		bottom: -55px
+		right: 20%	
+		width: 210px
+		height: 440px
+		display: inline-block
+// service
+.service
+	margin-top: 60px	
+	&-content
+		height: 380px
+		&-image
+			width: 570px
+			display: inline-block
+			height: 100%
+			img
+				max-width: 100%
+				max-height: 100%
+		&-info
+			width: 600px
+			float: right
+			.info-item
+				margin: 5px 0px
+				.info-title
+					cursor: pointer
+					display: table
+					width: 100%
+					height: 60px
+					border: solid 1px #e5e5e5
+					.info-pict
+						width: 30px
+						height: 30px
+						display: table-cell
+						vertical-align: middle
+						img
+							max-width: 100%
+							max-height: 100%
+							margin: 0px 15px	
+					h2
+						display: table-cell
+						vertical-align: middle
+						text-transform: uppercase
+						padding-left: 35px
+			.info-content
+				font-size: 15px
+				color: #8e8d96
+				font-family: Arial
+				font-style: italic
+				border: solid 1px #e5e5e5
+				padding: 20px
+				line-height: 1.4
+				display: none
+			span.menu-icon
+				display: table-cell
+				vertical-align: middle
+				text-align: center
+				width: 90px
+				transition: ease 0.5s
+// quote						
+.quote
+	margin-top: 120px
+	height: 300px
+	background: #f8f8f8
+.carousel-img
+	width: 150px
+	height: 150px
+	float: left
+	margin-right: 60px
+	img
+		max-width: 100%
+		max-height: 100%
+.carousel-block p
+	font-family: 'Roboto'
+	font-style: italic
+	font-size: 24px
+	color: #999
+.carusel-autor
+	margin-top: 20px
+	hr	
+		border: solid #f38181 2px
+		width: 60px
+		float: left
+		margin-top: 20px
+		margin-top: 12px
+	span
+		font-family: 'Kaushan Script'
+		font-size: 24px
+		margin-left: 20px	
+// team
+.team
+	+item-style()
+	[class^="item-"]
+		width: 380px
+		height: 470px
+	.team-social
+		a
+			display: inline-block
+			width: 55px
+			height: 55px
+			background: #fce38a
+			i
+				font-size: 24px
+				color: #fff
+				line-height: 2.4
+			&:hover
+				background: #f38181
+.info-name
+	text-transform: uppercase
+	font-size: 18px
+	text-align: center
+	margin: 25px 0px 15px
+.info-prof
+	color: #999
+	text-align: center
+// logos	
+.logos
+	margin-top: 190px
+	background: #f8f8f8
+	height: 250px
+	&-pic
+		height: 250px
+		background: url(../images/logos.png) no-repeat 50%
+// works
+.all-works
+	max-width: 1920px
+	min-width: 940px
+	margin: 0 auto
+	text-align: center
+	.items
+		width: 49%
+		display: inline-block
+	+item-style()
+	[class^="item-"]
+		width: 50%
+		height: 50%
+		& > img
+			// width: 100%
+			// height: auto
+	.item-5
+		height: auto	
+	[class^="item-"]:not(:first-child)	
+		margin-left: 0px
+	.info-card
+		.info-icon
+			font-weight: 100
+			margin: 15px 0px
+// clients
+.clients
+	height: 828px
+	background: url(../images/bg-cl.jpg)	
+	background-size: cover
+	&-block
+		margin-top: 50px
+.client
+	padding: 37px 35px
+	display: inline-block
+	width: 590px
+	height: 233px
+	&-image
+		float: left 
+	&-info
+		float: right
+	&-info
+		width: 380px
+	&-name
+		text-transform: uppercase	
+	&-proff
+		margin: 10px 0px
+		color: #999
+		font-style: italic
+		font-size: 14px
+	&-say
+		color: #999
+		line-height: 1.5
+		font-size: 15px
+		margin-top: 15px
+	.about-line
+		text-align: left
+		display: inline-block
+		margin: 8px 0px
+		width: 80px
+// news
+.last-news
+	.news:not(:first-child)
+		margin-left: 25px
+.news
+	margin-top: 50px
+	width: 380px
+	display: inline-block
+	position: relative
+	box-sizing: border-box
+	&-date
+		width: 60px
+		height: 70px
+		background: #95e1d3
+		position: absolute
+		top: 150px
+		left: -10px
+		color: #fff
+		text-align: center
+		h1
+			font-size: 33px
+			font-weight: 800
+			line-height: 1.3
+		span
+			font-style: italic
+	a
+		text-decoration: none
+		color: #333		
+	&-title
+		text-transform: uppercase
+		font-size: 14px
+		margin: 20px 0px
+		font-weight: 800
+	&-description
+		color: #999
+		font-style: italic
+		line-height: 1.5
+	hr
+		border: solid 1px #e5e5e5
+		margin: 20px 0px
+	&-views
+		color: #999
+		font-size: 14px
+		i
+			color: #95e1d3
+			margin-right: 10px
+// map
+.map
+	background: url(../images/map.jpg) no-repeat
+	background-size: cover
+	height: 200px
+	margin: 110px auto 75px
+	display: table
+	width: 100%
+	.open-map
+		text-align: center
+		display: table-cell
+		vertical-align: middle
+		h1
+			margin: 10px 0px
+// footer
+.subscribe-hr
+	border: solid 1px #e5e5e5
+	margin: 20px 0px			
+.footer
+	&-title
+		font-size: 46px
+		font-weight: 800
+		color: #999
+	&-description
+		font-size: 15px
+		color: #999
+		line-height: 1.6
+		margin: 45px 0px	
+.Subscribe
+	width: 480px
+.follower-count
+	& > strong
+		font-size: 18px
+		font-weight: 800
+		margin-right: 5px
+	span
+		font-style: italic
+		font-size: 17px
+		color: #999
+	i
+		color: #95e1d3
+		margin-left: 15px
+.subscribe-line
+	input
+		height: 40px
+		margin: 40px 0px 70px
+		outline: none
+		font-size: 15px
+	input[name="email"]
+		width: 230px
+		padding: 0px 5px
+		color: #999
+		font-style: italic
+		border: solid 1px #e7e7e7
+		box-sizing: border-box
+		position: relative
+	input[name="sub-button"]
+		background: #95e1d3
+		border: none
+		cursor: pointer
+		width: 150px
+		color: #fff
+		position: absolute
+		font-weight: 800
+		text-transform: uppercase
+.copyright
+	text-align: center
+	font-size: 14px
+	a
+		text-decoration: none
+		color: #f4a4a4
+		margin: 25px 0px				
