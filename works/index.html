@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="pop-up">
+		<div class="contact__form">
+			<form action="">
+				<h3 class="form__title">Оставьте заявку<div class="close">X</div></h3>
+				<input type="text" required placeholder="Ваше имя*">
+				<input type="email" placeholder="Электронная почта">
+				<input type="tel" required placeholder="Номер телефона*">
+				<textarea name="" id="" cols="30" rows="10" placeholder="Суть вопроса. Оставьте здесь свое сообщение и мы ответим вам в течении 30 минут"></textarea>
+				<input type="submit"  class="submit-btn" value="Отправить">
+			</form>
+		</div>
+	</div>
+	<header class="header container">
+		<div class="header__top">
+			<div class="header__top--logo__mobile d-hide">
+				<img src="images/logo-white.png" alt="">
+			</div>
+			<nav class="header__nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__down--link">Главная</a></li>
+					<li class="nav__item"><a href="каталог.html" class="nav__down--link">Каталог</a></li>
+					<li class="nav__item"><a href="в наличие.html" class="nav__down--link">В наличие</a></li>
+					<li class="nav__item"><a href="traid-in.html" class="nav__down--link">Traid-in</a></li>
+					<li class="nav__item"><a href="Металлообработка.html" class="nav__down--link">Металлообработка</a></li>
+					<li class="nav__item"><a href="контакты.html" class="nav__down--link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="hr-1"></div>
+			<div class="contacts__phone d-hide">
+				<span>Телефоны: </span>
+				<p>+7 (912) 857-46-53</p>
+				<p>+7 (905) 875 91 77</p>
+			</div>
+			<div class="btn-wrapper d-hide"><div class="btn" style="line-height: 2.2">Оставить заявку</div></div>
+		</div>
+		<div class="header__middle">
+			<div class="header__middle--logo">
+				<a href="javascript:void(0)"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="btn-open d-hide"><img src="images/open.png" alt=""></div>
+			<div class="header__middle--contacts hidden">
+				<div class="contacts__email">
+					<span>Электронная почта: </span>
+					<a href="javascript:void(0)">cnc18@yandex.ru</a>				
+				</div>
+				<div class="contacts__phone">
+					<span>Наши телефоны: </span>
+					<p>+7 (912) 857-46-53</p>
+					<p>+7 (905) 875 91 77</p>
+				</div>
+				<div class="contacts__btn hidden">
+					<input type="submit" id="pop-up-b" class="btn contact-btn pop-up-b" value="Оставить заявку">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="banner container">
+		<div class="article">
+				<h1 class="title-1">ПРОДАЖА ТОКАРНЫХ СТАНКОВ С ЧПУ</h1>
+				<h2 class="title-2">ДОСТАВКА ПО РОССИИ И СНГ</h2>
+				<span class="article__desc">
+					Поставки недорогого металлообрабатывающего оборудования с ЧПУ из Китая с европейским качеством
+				</span>
+				<div class="btn call--back d-hide">
+					<a href="tel:000">Позвонить</a>
+				</div>
+				<div class="contact-btn d-hide" id="pop-up"><span class="pop-up-b">Оставить заявку</span></div>
+		</div>
+	</div>
+	<main class="main container">	
+		<section class="b-products">
+			<div class="products container">
+				<div class="products__title">
+					<h1 class="title-1">МОДЕЛЬНЫЙ РЯД</h1>
+				</div>
+				<div class="products__items">
+					<div class="item">
+						<a href="javascript:void(0)">
+							<div class="item__image">
+								<img src="images/12-600x600.jpg" alt="">
+							</div>
+							<div class="item__desc">
+								<span>Токарные станки с линейным расположением инструмента</span>
+							</div>
+						</a>	
+					</div>
+					<div class="item">
+						<a href="javascript:void(0)">
+							<div class="item__image">
+								<img src="images/12-600x600.jpg" alt="">
+							</div>
+							<div class="item__desc">
+								<span>Токарные станки с линейным расположением инструмента</span>
+							</div>
+						</a>	
+					</div>
+					<div class="item">
+						<a href="javascript:void(0)">
+							<div class="item__image">
+								<img src="images/12-600x600.jpg" alt="">
+							</div>
+							<div class="item__desc">
+								<span>Токарные станки</span>
+							</div>
+						</a>	
+					</div>
+					<div class="item">
+						<a href="javascript:void(0)">
+							<div class="item__image">
+								<img src="images/12-600x600.jpg" alt="">
+							</div>
+							<div class="item__desc">
+								<span>Токарные станки с линейным расположением инструмента</span>
+							</div>
+						</a>	
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="b-company container">
+			<div class="company">
+				<div class="company__title">
+					<h2 class="title-2">О компании</h2>
+				</div>
+				<div class="company__desc">
+					<div class="b-video">
+						<div class="video__title">Видео</div>
+						<div class="company__desc--video">
+							<div class="video">
+								<iframe width="100%" height="220px"
+									src="https://www.youtube.com/embed/XGSy3_Czz8k">
+								</iframe>	
+							</div>
+						</div>
+					</div>	
+					<p>
+						Наша компания является эксклюзивным дистрибьютором китайского завода по производству токарных станков с ЧПУ NUOXIN.
+					</p>
+					<p>
+						Данное предприятие специализируется на выпуске токарных станков с ЧПУ, а так же токарно-фрезерных станков с приводным инструментом и осью «Y». На все модели устанавливается современная, легкая в освоении, система чпу–SYNTEC
+					</p>
+					<p>
+						Основные комплектующие токарных станков с ЧПУ поставляются на сборку только проверенными производителями. Так сервоприводы и двигатели, японского производителя YASKAWA, электро-автоматика германской фирмы Schneider, рельсовые направляющие и ШВП фирмы HIWIN(Тайвань), подшипники шпинделя NSK(Япония), револьверные головки PRAGATI или LIO SHING
+					</p>
+					<p>
+						Со своей стороны мы осуществляем гарантийное и послегарантийное обслуживание данного оборудования, пусконаладочные работы, обучение персонала работе на станках, при необходимости снабжаем наших клиентов программами для выполнения деталей.
+					</p>
+					<span>Качество станков проверено на практике! Мы сами работаем на этом оборудовании с 2013 года!!!</span>
+				</div>
+				<div class="company__brands">
+					<div class="brands-title">
+						<h2>ПРОИЗВОДИТЕЛИ ОСНОВНЫХ УЗЛОВ СТАНКА</h2>
+					</div>
+					<div class="brands__item"><img src="images/brands/1.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/2.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/3.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/4.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/5.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/6.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/7.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/8.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/9.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/10.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/11.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/12.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/13.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/14.jpg" alt=""></div>
+					<div class="brands__item"><img src="images/brands/15.jpg" alt=""></div>
+				</div>
+			</div>	
+		</section>
+		<section class="b-location">
+			<div class="location">
+				<div class="location__title">
+					<h2 class="title-2">
+						Где мы находимся
+					</h2>
+					<span class="location__adress">
+						426063, Удмуртская Республика, г. Ижевск, ул. Марата, 5
+					</span>
+					<div class="location__map">
+					</div>
+				</div>
+			</div>	
+		</section>
+	</main>
+	<footer class="footer container">
+		<div class="footer__item"><p>© 2017 ООО "Виктория" </p></div>
+			<div class="footer__item">
+				<div class="contacts__phone">
+					<span>Телефон: </span>
+					<p>+7 (912) 857-46-53</p>
+					<p>+7 (905) 875 91 77</p>
+				</div>
+			</div>
+			<div class="footer__item">
+				<div class="contacts__adress">
+					<span>Адрес: </span>
+					<p>426063, УР, г.Ижевск, ул. Марата, 5</p>
+				</div>
+				<div class="contacts__email">
+					<span>e-mail:</span>
+					<a href="#">cnc18@yandex.ru</a>
+					<a href="#">izhstamp@mail.ru</a>
+				</div>
+			</div>
+			<div class="footer__item">
+				<nav class="footer__nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Главная</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Каталог</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">В наличие</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Traid-in</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Металлообработка</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer__autor">
+					<p class="created__by">Создание сайтов - дизайн-студия " " </p>
+				</div>
+			</div>
+	</footer>
+	<script src="js/comoon.js"></script>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+</body>
+</html>

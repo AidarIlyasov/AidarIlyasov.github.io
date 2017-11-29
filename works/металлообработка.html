@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="pop-up">
+		<div class="contact__form">
+			<form action="">
+				<h3 class="form__title">Оставьте заявку<div class="close">X</div></h3>
+				<input type="text" required placeholder="Ваше имя*">
+				<input type="email" placeholder="Электронная почта">
+				<input type="tel" required placeholder="Номер телефона*">
+				<textarea name="" id="" cols="30" rows="10" placeholder="Суть вопроса. Оставьте здесь свое сообщение и мы ответим вам в течении 30 минут"></textarea>
+				<input type="submit"  class="submit-btn" value="Отправить">
+			</form>
+		</div>
+	</div>
+	<header class="header container">
+		<div class="header__top">
+			<div class="header__top--logo__mobile d-hide">
+				<img src="images/logo-white.png" alt="">
+			</div>
+			<nav class="header__nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__down--link">Главная</a></li>
+					<li class="nav__item"><a href="каталог.html" class="nav__down--link">Каталог</a></li>
+					<li class="nav__item"><a href="в наличие.html" class="nav__down--link">В наличие</a></li>
+					<li class="nav__item"><a href="traid-in.html" class="nav__down--link">Traid-in</a></li>
+					<li class="nav__item"><a href="Металлообработка.html" class="nav__down--link">Металлообработка</a></li>
+					<li class="nav__item"><a href="контакты.html" class="nav__down--link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="hr-1"></div>
+			<div class="contacts__phone d-hide">
+				<span>Телефоны: </span>
+				<p>+7 (912) 857-46-53</p>
+				<p>+7 (905) 875 91 77</p>
+			</div>
+		</div>
+		<div class="header__middle">
+			<div class="header__middle--logo">
+				<a href="javascript:void(0)"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="btn-open d-hide"><img src="images/open.png" alt=""></div>
+			<div class="header__middle--contacts hidden">
+				<div class="contacts__email">
+					<span>Электронная почта: </span>
+					<a href="javascript:void(0)">cnc18@yandex.ru</a>				
+				</div>
+				<div class="contacts__phone">
+					<span>Наши телефоны: </span>
+					<p>+7 (912) 857-46-53</p>
+					<p>+7 (905) 875 91 77</p>
+				</div>
+				<div class="contacts__btn hidden">
+					<input type="submit" id="pop-up-b" class="btn contact-btn pop-up-b" value="Оставить заявку">
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="container">
+		<div class="brack__line"></div>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li>Металлообработка</li>
+		</ul>
+		<div class="metalworking">
+			<div class="metalworking__items">
+				<div class="item--top">
+					<div class="article">
+							<h1 class="title-1">ТОКАРНЫЕ РАБОТЫ С ВЫСОКОЙ СТЕПЕНЬЮ ТОЧНОСТИ</h1>
+							<span class="article__desc">
+								и скоростью обработки на станках с ЧПУ
+							</span>
+							<h2 class="title-2">ДОСТАВКА ПО РОССИИ И СНГ</h2>
+					</div>
+				</div>
+				<div class="item--second">
+					<div class="description">
+						<h2 class="title-2">ОБЪЕМ ПРОИЗВОДСТВА</h2>
+						<h2 class="title-2 orange">ПРЕВЫШАЕТ 850 000 ДЕТАЛЕЙ В ГОД</h2>
+						<h2 class="title-2">ОПЫТ РАБОТЫ НА СТАНКАХ С ЧПУ</h2>
+						<h2 class="title-2 orange">БОЛЕЕ 20 ЛЕТ</h2>
+						<h2 class="title-2">МЫ РАБОТАЕМ НА ИМПОРТНЫХ, ВЫСОКОТОЧНЫХ СТАНКАХ</h2>
+					<ul>
+						<li>Максимальный диаметр обработки — 120 мм;</li>
+						<li>Максимальная длина обработки не более — 100 мм;</li>
+						<li>Автоматическая подача заготовки.</li>
+					</ul>
+					</div>
+				</div>
+				<div class="metall__produts">
+					<div class="company__title">
+						<h2 class="title-2">Наши изделия</h2>
+					</div>
+					<div class="metall__item">
+						<a data-fancybox="gallery" href="images/1.jpg" ><img src="images/1.jpg" alt=""></a>
+						<a data-fancybox="gallery" href="images/2.jpg" ><img src="images/2.jpg" alt=""></a>
+						<a data-fancybox="gallery" href="images/3.jpg" ><img src="images/3.jpg" alt=""></a>
+						<a data-fancybox="gallery" href="images/4.jpg" ><img src="images/4.jpg" alt=""></a>
+						<a data-fancybox="gallery" href="images/4.jpg" ><img src="images/4.jpg" alt=""></a>
+					</div>
+					<div class="company__title">
+						<h2 class="title-2">Как мы работаем</h2>
+					</div>
+					<div class="metall__item">
+						<div class="work__process">
+							<div class="process__item">
+								<div class="img--call"></div>
+								<span>Обработка заявки</span>
+							</div>
+							<div class="process__item ">
+								<div class="img--cost"></div>
+								<span>Расчет стоимости</span>
+							</div>
+							<div class="process__item ">
+								<div class="img--contract"></div>
+								<span>Подписание договора</span>
+							</div>
+							<div class="process__item ">
+								<div class="img--material"></div>
+								<span>Заказ материала</span>
+							</div>
+							<div class="process__item">
+								<div class="img--creating"></div>
+								<span>Производство</span>
+							</div>
+							<div class="process__item">
+								<div class="img--done"></div>
+								<span>Отгрузка готовой продукции</span>
+							</div>
+						</div>
+					</div>
+					<div class="company__buttun"><div class="btn pop-up-b">Оставить заявку</div></div>
+				</div>
+				<div class="our-advantages">
+					<div class="company__title">
+						<h2 class="title-2">Наши изделия</h2>
+					</div>
+					<ul class="our-advantages--list">
+						<li>Круглосуточное производство</li>
+						<li>Скоростная обработка снижает цену детали</li>
+						<li>Новое импортное, высокоточное оборудование</li>
+						<li>Цены вычисляются исходя из времени обработки детали</li>
+						<li>Все процессы контроля производства в одной организации</li>
+						<li>Готовое изделие проходит через отдел технического контроля (ОТК)</li>
+					</ul>
+				</div>
+				<div class="garant">
+					<div class="company__title">
+						<h2 class="title-2">Гарантия</h2>
+					</div>
+					<strong>Благодаря новому высокопроизводительному оборудованию, мы гарантируем стабильно высокое качество наших деталей!</strong>
+					<ul><strong>Работа отдела технического контроля</strong>
+						<li>Проверка всех деталей по всем размерам</li>
+						<li>Допускаются на отгрузку только 100% проверенные изделия</li>
+						<li>Готовая партия продукции высылается заказчику.</li>
+					</ul>
+				</div>
+				<div class="metall__partners">				
+					<div class="company__title">
+						<h2 class="title-2">Наши клиенты</h2>
+					</div>
+					<div class="metall__partners--block">
+						<div class="block__element">
+							<h2>КАЧЕСТВО И ТОЧНОСТЬ ДЛЯ АТОМНОЙ ЭНЕРГИИ</h2>
+							<p>Более 55000 болтов М10Х25, М5Х10 и М5Х12 из жаропрочной, нержавеющей стали,
+	марки 14Х17Н2, произведено и отгружено для РОСАТОМА</p>
+						</div>
+					</div>
+					<div class="metall__partners--block">
+						<div class="block__element">
+							<h2>КОГДА НУЖНА ПРОЧНОСТЬ ПОДЪЕМНЫХ МЕХАНИЗМОВ</h2>
+							<p>Более 120 000 комплектующих (осей, стержней, втулок и т.д.) 
+выпущено для Карачаровского Механического Завода, занимающегося производством лифтового оборудования</p>
+						</div>
+					</div>
+					<div class="metall__partners--block">
+						<div class="block__element">
+							<h2>ДОЛГОСРОЧНОЕ СОТРУДНИЧЕСТВО</h2>
+							<p>Уже более шести лет Ижевский радиозавод доверяет нам изготовление целого ряда высокоточных деталей.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer container">
+		<div class="footer__item"><p>© 2017 ООО "Виктория" </p></div>
+			<div class="footer__item">
+				<div class="contacts__phone">
+					<span>Телефон: </span>
+					<p>+7 (912) 857-46-53</p>
+					<p>+7 (905) 875 91 77</p>
+				</div>
+			</div>
+			<div class="footer__item">
+				<div class="contacts__adress">
+					<span>Адрес: </span>
+					<p>426063, УР, г.Ижевск, ул. Марата, 5</p>
+				</div>
+				<div class="contacts__email">
+					<span>e-mail:</span>
+					<a href="#">cnc18@yandex.ru</a>
+					<a href="#">izhstamp@mail.ru</a>
+				</div>
+			</div>
+			<div class="footer__item">
+				<nav class="footer__nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Главная</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Каталог</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">В наличие</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Traid-in</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Металлообработка</a></li>
+						<li class="nav__item"><a href="javascript:void(0)" class="nav__down--link">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer__autor" style="position: relative;bottom: 0">
+					<p class="created__by">Создание сайтов - дизайн-студия " " </p>
+				</div>
+			</div>
+	</footer>
+	<script src="js/comoon.js"></script>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+</body>
+</html>		
