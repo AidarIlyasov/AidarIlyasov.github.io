@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/animate.min.css" />
     <link rel="stylesheet" href="./css/ionicons.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
@@ -87,7 +88,7 @@
                         <p class="text-muted">Верстка с использованием сборщиков и препроцессоров</p>
                     </div>
                 </div>
-		    
+
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
                         <i class="icon-lg ion-ios-star-outline wow fadeIn" data-wow-delay=".3s"></i>
@@ -99,9 +100,14 @@
         </div>
     </section>
     <section id="three" class="no-padding">
+      <div class="select-category portfolioFilter">
+        <button class="btn btn-primary" data-filter=".first">Верстка</button>
+        <button class="btn btn-primary" data-filter=".second">Vuejs - приложение</button>
+        <button class="btn btn-primary" data-filter=".third">Сайты на CMS</button>
+      </div>
         <div class="container-fluid container-w">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
+          <div class="portfolioContainer row no-gutter isotope">
+                <div class="col-lg-4 col-sm-6 first">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/golden.jpg">
                         <img src="./assets/golden.jpg" class="img-responsive" alt="Image 1">
                         <div class="gallery-box-caption">
@@ -113,7 +119,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 first">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/microsmag.jpg">
                         <img src="./assets/microsmag.jpg" class="img-responsive" alt="Image 2">
                         <div class="gallery-box-caption">
@@ -126,7 +132,7 @@
                     </a>
                 </div>
 				<div class="clearfix hidden-lg"> </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 first">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/lorem-ipsum.jpg">
                         <img src="./assets/lorem-ipsum.jpg" class="img-responsive" alt="Image 3">
                         <div class="gallery-box-caption">
@@ -138,7 +144,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 first">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/ural.jpg">
                         <img src="./assets/ural.jpg" class="img-responsive" alt="Image 4">
                         <div class="gallery-box-caption">
@@ -150,8 +156,20 @@
                         </div>
                     </a>
                 </div>
-				<div class="clearfix hidden-lg"> </div>
-                <div class="col-lg-4 col-sm-6">
+				      <div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6 first">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/mogo.jpg">
+                        <img src="./assets/mogo.jpg" class="img-responsive" alt="Image 5">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 second">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/mogo.jpg">
                         <img src="./assets/mogo.jpg" class="img-responsive" alt="Image 5">
                         <div class="gallery-box-caption">
@@ -164,7 +182,9 @@
                     </a>
                 </div>
             </div>
+
         </div>
+  </div>
     </section>
     <section id="last">
         <div class="container">
@@ -254,7 +274,7 @@
                     <div class="btns">
         		      <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Закрыть</button>
                       <a href="" id="work-num" target="blank"><button class="btn btn-primary btn-lg center-block">Сайт</button></a>
-                    </div>    
+                    </div>
         		</div>
         	</div>
         </div>
@@ -293,13 +313,14 @@
         </div>
         </div>
     </div>
-	  
+
     <!--scripts loaded here -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery.easing.min.js"></script>
     <script src="./js/wow.js"></script>
+    <script src="./js/jquery.isotope.min.js"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

@@ -10,9 +10,9 @@
             top: 200
         }
     });
-    
+
     new WOW().init();
-    
+
     $('a.page-scroll').bind('click', function(event) {
         var $ele = $(this);
         $('html, body').stop().animate({
@@ -20,11 +20,7 @@
         }, 1450, 'easeInOutExpo');
         event.preventDefault();
     });
-    
-    // $('.navbar-collapse ul li a').click(function() {
-    //      always close responsive nav after click 
-    //     $('.navbar-toggle:visible').click();
-    // });
+
 
     $('#galleryModal').on('show.bs.modal', function (e) {
        $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
@@ -38,5 +34,31 @@
 
         var lorem = $("#work-num").attr("href", "./works/progect-" + altImg + "/index.html");
     });
-    
+
+      var $container = $('.portfolioContainer');
+      $container.isotope({
+          filter: '.first',
+          animationOptions: {
+              duration: 750,
+              easing: 'linear',
+              queue: false
+          }
+      });
+
+    $('.portfolioFilter button').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    });
+
 })(jQuery);
