@@ -32,25 +32,11 @@
         var altImg = $(this).find('.img-responsive').attr("alt");
         var altImg = parseInt(altImg.replace(/\D+/g,""));
 
-        var websiteLink = "";
-        switch (altImg) {
-          case altImg < 6:
-            websiteLink = "./works/progect-" + altImg + "/index.html";
-            break;
-          case altImg == 6:
-            websiteLink = "https://opt-ovik.ru/"
-            break;
-          case altImg == 7:
-            websiteLink = "http://starta-spb.online/"
-            break;
-          case altImg == 8:
-            websiteLink = "https://osmos-tec.ru/"
-            break;
-          default:
-            var websiteLink = "";
-        }
+        var websiteLinks = ['https://opt-ovik.ru/','http://starta-spb.online/','https://osmos-tec.ru/'];
 
-        $("#work-num").attr("href", websiteLink);
+        var link = altImg >= 6 ? websiteLinks[altImg-6] : "./works/progect-" + altImg + "/index.html";
+
+        $("#work-num").attr("href", link);
     });
 
       var $container = $('.portfolioContainer');
