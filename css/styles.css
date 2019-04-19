@@ -295,6 +295,11 @@ footer {
     #bs-navbar{
         border-bottom: solid 1px #3c4e66;
     }
+    .work-item{
+        width: 480px;
+        margin: 10px auto;
+        right: 0;
+    }
 }
 @media(min-width:768px) {
     .icon-lg {
@@ -330,7 +335,9 @@ footer {
         max-width: 80%;
         font-size: 18px;
     }
-
+    .work-item{
+        width: 50%;
+    }
 }
 
 .form-control {
@@ -366,10 +373,19 @@ textarea {
     margin: 50px auto 0;
     max-width: 400px;
 }
-
+@media (max-width: 480px){
+    .work-item{
+        width: 320px;
+        right: 0;
+        margin: 10px auto;
+    }
+}
 @media(min-width:992px) {
     .feature {
         margin: 20px auto 0;
+    }
+    .work-item{
+        width: 33.3%;
     }
 }
 
@@ -559,3 +575,8 @@ img::-moz-selection {
 .btn .btn-primary .btn-lg .center-block{
 	outline: none;
 }
+@media (min-width: 1200px){
+    .work-item{
+        width: 33.3%;
+    }
+} 

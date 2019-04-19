@@ -32,7 +32,7 @@
         var altImg = $(this).find('.img-responsive').attr("alt");
         var altImg = parseInt(altImg.replace(/\D+/g,""));
 
-        var websiteLinks = ['https://opt-ovik.ru/','http://starta-spb.online/','https://osmos-tec.ru/'];
+        var websiteLinks = ['https://day-task.firebaseapp.com/','1','https://opt-ovik.ru/','http://starta-spb.online/','https://osmos-tec.ru/'];
 
         var link = altImg >= 6 ? websiteLinks[altImg-6] : "./works/progect-" + altImg + "/index.html";
 

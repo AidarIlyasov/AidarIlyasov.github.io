@@ -57,3 +57,9 @@ a:focus {
   -moz-transition-property: -moz-transform, opacity;
   transition-property: transform, opacity;
 }
+@media (max-width: 480px){
+    .portfolioFilter button{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+}
