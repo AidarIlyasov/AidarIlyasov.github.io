@@ -65,4 +65,34 @@
          return false;
     });
 
+
+   $("#mail-send").click(function(){
+
+    var name = $(".contact-form").find("input[name='name']").val();
+    var email = $(".contact-form").find("input[name='email']").val();
+    var phone = $(".contact-form").find("input[name='phone']").val();
+    var message = $(".contact-form").find("textarea[name='message']").val();
+
+    fetch("http://test.ttestt.ru/call_form.php",{
+        method: "post",
+        body: JSON.stringify({name: name, email: email, phone: phone, message: message}),
+        headers: {
+          'Access-Control-Allow-Origin':'*',
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Headers": "X-PINGOTHER, Content-Type, text/html"
+        },
+        mode: 'cors'
+        }).then(function(response){
+          return response.json();
+        }).then(function(resp){
+          console.log(resp);
+          alert('form submited')
+        }).catch(function(err){
+          $("#alertModal").modal();
+        });
+
+    console.log(`name ${name}, email${email}, phone ${phone}, message ${message}`);
+    return false;
+   })
+ 
 })(jQuery);
