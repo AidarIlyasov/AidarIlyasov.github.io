@@ -8,10 +8,10 @@ http://www.bootstrapzero.com
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
 
-@font-face {
- font-family: "Dancing Script";
- src: url("./fonts/DancingScript-Regular.ttf") format("ttf")
-}
+/*@font-face {
+ font-family: "Open Sans";
+ src: url("./fonts/DancingScript-Regular.ttf") format("woff2")
+}*/
 
 html,
 body {
@@ -81,7 +81,6 @@ p {
 
 .cursive {
     font-family: 'Dancing Script', cursive;
-    font-weight: 1000;
     text-transform: none;
 }
 
